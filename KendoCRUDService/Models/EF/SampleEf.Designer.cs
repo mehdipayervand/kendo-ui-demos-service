@@ -675,7 +675,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -694,7 +694,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnCategoryIDChanging(value);
                     ReportPropertyChanging("CategoryID");
-                    _CategoryID = StructuralObject.SetValidValue(value);
+                    _CategoryID = StructuralObject.SetValidValue(value, "CategoryID");
                     ReportPropertyChanged("CategoryID");
                     OnCategoryIDChanged();
                 }
@@ -719,7 +719,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCategoryNameChanging(value);
                 ReportPropertyChanging("CategoryName");
-                _CategoryName = StructuralObject.SetValidValue(value, false);
+                _CategoryName = StructuralObject.SetValidValue(value, false, "CategoryName");
                 ReportPropertyChanged("CategoryName");
                 OnCategoryNameChanged();
             }
@@ -743,7 +743,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnDescriptionChanging(value);
                 ReportPropertyChanging("Description");
-                _Description = StructuralObject.SetValidValue(value, true);
+                _Description = StructuralObject.SetValidValue(value, true, "Description");
                 ReportPropertyChanged("Description");
                 OnDescriptionChanged();
             }
@@ -767,7 +767,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPictureChanging(value);
                 ReportPropertyChanging("Picture");
-                _Picture = StructuralObject.SetValidValue(value, true);
+                _Picture = StructuralObject.SetValidValue(value, true, "Picture");
                 ReportPropertyChanged("Picture");
                 OnPictureChanged();
             }
@@ -778,7 +778,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -832,7 +831,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -851,7 +850,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnCustomerIDChanging(value);
                     ReportPropertyChanging("CustomerID");
-                    _CustomerID = StructuralObject.SetValidValue(value, false);
+                    _CustomerID = StructuralObject.SetValidValue(value, false, "CustomerID");
                     ReportPropertyChanged("CustomerID");
                     OnCustomerIDChanged();
                 }
@@ -876,7 +875,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCompanyNameChanging(value);
                 ReportPropertyChanging("CompanyName");
-                _CompanyName = StructuralObject.SetValidValue(value, false);
+                _CompanyName = StructuralObject.SetValidValue(value, false, "CompanyName");
                 ReportPropertyChanged("CompanyName");
                 OnCompanyNameChanged();
             }
@@ -900,7 +899,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnContactNameChanging(value);
                 ReportPropertyChanging("ContactName");
-                _ContactName = StructuralObject.SetValidValue(value, true);
+                _ContactName = StructuralObject.SetValidValue(value, true, "ContactName");
                 ReportPropertyChanged("ContactName");
                 OnContactNameChanged();
             }
@@ -924,7 +923,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnContactTitleChanging(value);
                 ReportPropertyChanging("ContactTitle");
-                _ContactTitle = StructuralObject.SetValidValue(value, true);
+                _ContactTitle = StructuralObject.SetValidValue(value, true, "ContactTitle");
                 ReportPropertyChanged("ContactTitle");
                 OnContactTitleChanged();
             }
@@ -948,7 +947,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnAddressChanging(value);
                 ReportPropertyChanging("Address");
-                _Address = StructuralObject.SetValidValue(value, true);
+                _Address = StructuralObject.SetValidValue(value, true, "Address");
                 ReportPropertyChanged("Address");
                 OnAddressChanged();
             }
@@ -972,7 +971,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCityChanging(value);
                 ReportPropertyChanging("City");
-                _City = StructuralObject.SetValidValue(value, true);
+                _City = StructuralObject.SetValidValue(value, true, "City");
                 ReportPropertyChanged("City");
                 OnCityChanged();
             }
@@ -996,7 +995,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRegionChanging(value);
                 ReportPropertyChanging("Region");
-                _Region = StructuralObject.SetValidValue(value, true);
+                _Region = StructuralObject.SetValidValue(value, true, "Region");
                 ReportPropertyChanged("Region");
                 OnRegionChanged();
             }
@@ -1020,7 +1019,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPostalCodeChanging(value);
                 ReportPropertyChanging("PostalCode");
-                _PostalCode = StructuralObject.SetValidValue(value, true);
+                _PostalCode = StructuralObject.SetValidValue(value, true, "PostalCode");
                 ReportPropertyChanged("PostalCode");
                 OnPostalCodeChanged();
             }
@@ -1044,7 +1043,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCountryChanging(value);
                 ReportPropertyChanging("Country");
-                _Country = StructuralObject.SetValidValue(value, true);
+                _Country = StructuralObject.SetValidValue(value, true, "Country");
                 ReportPropertyChanged("Country");
                 OnCountryChanged();
             }
@@ -1068,7 +1067,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPhoneChanging(value);
                 ReportPropertyChanging("Phone");
-                _Phone = StructuralObject.SetValidValue(value, true);
+                _Phone = StructuralObject.SetValidValue(value, true, "Phone");
                 ReportPropertyChanged("Phone");
                 OnPhoneChanged();
             }
@@ -1092,7 +1091,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnFaxChanging(value);
                 ReportPropertyChanging("Fax");
-                _Fax = StructuralObject.SetValidValue(value, true);
+                _Fax = StructuralObject.SetValidValue(value, true, "Fax");
                 ReportPropertyChanged("Fax");
                 OnFaxChanged();
             }
@@ -1116,7 +1115,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnBoolChanging(value);
                 ReportPropertyChanging("Bool");
-                _Bool = StructuralObject.SetValidValue(value);
+                _Bool = StructuralObject.SetValidValue(value, "Bool");
                 ReportPropertyChanged("Bool");
                 OnBoolChanged();
             }
@@ -1127,7 +1126,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -1201,7 +1199,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -1220,7 +1218,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnCustomerTypeIDChanging(value);
                     ReportPropertyChanging("CustomerTypeID");
-                    _CustomerTypeID = StructuralObject.SetValidValue(value, false);
+                    _CustomerTypeID = StructuralObject.SetValidValue(value, false, "CustomerTypeID");
                     ReportPropertyChanged("CustomerTypeID");
                     OnCustomerTypeIDChanged();
                 }
@@ -1245,7 +1243,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCustomerDescChanging(value);
                 ReportPropertyChanging("CustomerDesc");
-                _CustomerDesc = StructuralObject.SetValidValue(value, true);
+                _CustomerDesc = StructuralObject.SetValidValue(value, true, "CustomerDesc");
                 ReportPropertyChanged("CustomerDesc");
                 OnCustomerDescChanged();
             }
@@ -1256,7 +1254,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -1312,7 +1309,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -1331,7 +1328,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnEmployeeIDChanging(value);
                     ReportPropertyChanging("EmployeeID");
-                    _EmployeeID = StructuralObject.SetValidValue(value);
+                    _EmployeeID = StructuralObject.SetValidValue(value, "EmployeeID");
                     ReportPropertyChanged("EmployeeID");
                     OnEmployeeIDChanged();
                 }
@@ -1356,7 +1353,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnLastNameChanging(value);
                 ReportPropertyChanging("LastName");
-                _LastName = StructuralObject.SetValidValue(value, false);
+                _LastName = StructuralObject.SetValidValue(value, false, "LastName");
                 ReportPropertyChanged("LastName");
                 OnLastNameChanged();
             }
@@ -1380,7 +1377,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnFirstNameChanging(value);
                 ReportPropertyChanging("FirstName");
-                _FirstName = StructuralObject.SetValidValue(value, false);
+                _FirstName = StructuralObject.SetValidValue(value, false, "FirstName");
                 ReportPropertyChanged("FirstName");
                 OnFirstNameChanged();
             }
@@ -1404,7 +1401,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnTitleChanging(value);
                 ReportPropertyChanging("Title");
-                _Title = StructuralObject.SetValidValue(value, true);
+                _Title = StructuralObject.SetValidValue(value, true, "Title");
                 ReportPropertyChanged("Title");
                 OnTitleChanged();
             }
@@ -1428,7 +1425,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnTitleOfCourtesyChanging(value);
                 ReportPropertyChanging("TitleOfCourtesy");
-                _TitleOfCourtesy = StructuralObject.SetValidValue(value, true);
+                _TitleOfCourtesy = StructuralObject.SetValidValue(value, true, "TitleOfCourtesy");
                 ReportPropertyChanged("TitleOfCourtesy");
                 OnTitleOfCourtesyChanged();
             }
@@ -1452,7 +1449,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnBirthDateChanging(value);
                 ReportPropertyChanging("BirthDate");
-                _BirthDate = StructuralObject.SetValidValue(value);
+                _BirthDate = StructuralObject.SetValidValue(value, "BirthDate");
                 ReportPropertyChanged("BirthDate");
                 OnBirthDateChanged();
             }
@@ -1476,7 +1473,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnHireDateChanging(value);
                 ReportPropertyChanging("HireDate");
-                _HireDate = StructuralObject.SetValidValue(value);
+                _HireDate = StructuralObject.SetValidValue(value, "HireDate");
                 ReportPropertyChanged("HireDate");
                 OnHireDateChanged();
             }
@@ -1500,7 +1497,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnAddressChanging(value);
                 ReportPropertyChanging("Address");
-                _Address = StructuralObject.SetValidValue(value, true);
+                _Address = StructuralObject.SetValidValue(value, true, "Address");
                 ReportPropertyChanged("Address");
                 OnAddressChanged();
             }
@@ -1524,7 +1521,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCityChanging(value);
                 ReportPropertyChanging("City");
-                _City = StructuralObject.SetValidValue(value, true);
+                _City = StructuralObject.SetValidValue(value, true, "City");
                 ReportPropertyChanged("City");
                 OnCityChanged();
             }
@@ -1548,7 +1545,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRegionChanging(value);
                 ReportPropertyChanging("Region");
-                _Region = StructuralObject.SetValidValue(value, true);
+                _Region = StructuralObject.SetValidValue(value, true, "Region");
                 ReportPropertyChanged("Region");
                 OnRegionChanged();
             }
@@ -1572,7 +1569,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPostalCodeChanging(value);
                 ReportPropertyChanging("PostalCode");
-                _PostalCode = StructuralObject.SetValidValue(value, true);
+                _PostalCode = StructuralObject.SetValidValue(value, true, "PostalCode");
                 ReportPropertyChanged("PostalCode");
                 OnPostalCodeChanged();
             }
@@ -1596,7 +1593,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCountryChanging(value);
                 ReportPropertyChanging("Country");
-                _Country = StructuralObject.SetValidValue(value, true);
+                _Country = StructuralObject.SetValidValue(value, true, "Country");
                 ReportPropertyChanged("Country");
                 OnCountryChanged();
             }
@@ -1620,7 +1617,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnHomePhoneChanging(value);
                 ReportPropertyChanging("HomePhone");
-                _HomePhone = StructuralObject.SetValidValue(value, true);
+                _HomePhone = StructuralObject.SetValidValue(value, true, "HomePhone");
                 ReportPropertyChanged("HomePhone");
                 OnHomePhoneChanged();
             }
@@ -1644,7 +1641,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnExtensionChanging(value);
                 ReportPropertyChanging("Extension");
-                _Extension = StructuralObject.SetValidValue(value, true);
+                _Extension = StructuralObject.SetValidValue(value, true, "Extension");
                 ReportPropertyChanged("Extension");
                 OnExtensionChanged();
             }
@@ -1668,7 +1665,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPhotoChanging(value);
                 ReportPropertyChanging("Photo");
-                _Photo = StructuralObject.SetValidValue(value, true);
+                _Photo = StructuralObject.SetValidValue(value, true, "Photo");
                 ReportPropertyChanged("Photo");
                 OnPhotoChanged();
             }
@@ -1692,7 +1689,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnNotesChanging(value);
                 ReportPropertyChanging("Notes");
-                _Notes = StructuralObject.SetValidValue(value, true);
+                _Notes = StructuralObject.SetValidValue(value, true, "Notes");
                 ReportPropertyChanged("Notes");
                 OnNotesChanged();
             }
@@ -1716,7 +1713,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnReportsToChanging(value);
                 ReportPropertyChanging("ReportsTo");
-                _ReportsTo = StructuralObject.SetValidValue(value);
+                _ReportsTo = StructuralObject.SetValidValue(value, "ReportsTo");
                 ReportPropertyChanged("ReportsTo");
                 OnReportsToChanged();
             }
@@ -1740,7 +1737,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPhotoPathChanging(value);
                 ReportPropertyChanging("PhotoPath");
-                _PhotoPath = StructuralObject.SetValidValue(value, true);
+                _PhotoPath = StructuralObject.SetValidValue(value, true, "PhotoPath");
                 ReportPropertyChanged("PhotoPath");
                 OnPhotoPathChanged();
             }
@@ -1751,7 +1748,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -1885,7 +1881,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -1904,7 +1900,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnEmployeeIDChanging(value);
                     ReportPropertyChanging("EmployeeID");
-                    _EmployeeID = StructuralObject.SetValidValue(value);
+                    _EmployeeID = StructuralObject.SetValidValue(value, "EmployeeID");
                     ReportPropertyChanged("EmployeeID");
                     OnEmployeeIDChanged();
                 }
@@ -1929,7 +1925,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnFirstNameChanging(value);
                 ReportPropertyChanging("FirstName");
-                _FirstName = StructuralObject.SetValidValue(value, true);
+                _FirstName = StructuralObject.SetValidValue(value, true, "FirstName");
                 ReportPropertyChanged("FirstName");
                 OnFirstNameChanged();
             }
@@ -1953,7 +1949,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnLastNameChanging(value);
                 ReportPropertyChanging("LastName");
-                _LastName = StructuralObject.SetValidValue(value, true);
+                _LastName = StructuralObject.SetValidValue(value, true, "LastName");
                 ReportPropertyChanged("LastName");
                 OnLastNameChanged();
             }
@@ -1977,7 +1973,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnReportsToChanging(value);
                 ReportPropertyChanging("ReportsTo");
-                _ReportsTo = StructuralObject.SetValidValue(value);
+                _ReportsTo = StructuralObject.SetValidValue(value, "ReportsTo");
                 ReportPropertyChanged("ReportsTo");
                 OnReportsToChanged();
             }
@@ -2001,7 +1997,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnAddressChanging(value);
                 ReportPropertyChanging("Address");
-                _Address = StructuralObject.SetValidValue(value, true);
+                _Address = StructuralObject.SetValidValue(value, true, "Address");
                 ReportPropertyChanged("Address");
                 OnAddressChanged();
             }
@@ -2025,7 +2021,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCityChanging(value);
                 ReportPropertyChanging("City");
-                _City = StructuralObject.SetValidValue(value, true);
+                _City = StructuralObject.SetValidValue(value, true, "City");
                 ReportPropertyChanged("City");
                 OnCityChanged();
             }
@@ -2049,7 +2045,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCountryChanging(value);
                 ReportPropertyChanging("Country");
-                _Country = StructuralObject.SetValidValue(value, true);
+                _Country = StructuralObject.SetValidValue(value, true, "Country");
                 ReportPropertyChanged("Country");
                 OnCountryChanged();
             }
@@ -2073,7 +2069,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPhoneChanging(value);
                 ReportPropertyChanging("Phone");
-                _Phone = StructuralObject.SetValidValue(value, true);
+                _Phone = StructuralObject.SetValidValue(value, true, "Phone");
                 ReportPropertyChanged("Phone");
                 OnPhoneChanged();
             }
@@ -2097,7 +2093,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnExtensionChanging(value);
                 ReportPropertyChanging("Extension");
-                _Extension = StructuralObject.SetValidValue(value);
+                _Extension = StructuralObject.SetValidValue(value, "Extension");
                 ReportPropertyChanged("Extension");
                 OnExtensionChanged();
             }
@@ -2121,7 +2117,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnBirthDateChanging(value);
                 ReportPropertyChanging("BirthDate");
-                _BirthDate = StructuralObject.SetValidValue(value);
+                _BirthDate = StructuralObject.SetValidValue(value, "BirthDate");
                 ReportPropertyChanged("BirthDate");
                 OnBirthDateChanged();
             }
@@ -2145,7 +2141,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnHireDateChanging(value);
                 ReportPropertyChanging("HireDate");
-                _HireDate = StructuralObject.SetValidValue(value);
+                _HireDate = StructuralObject.SetValidValue(value, "HireDate");
                 ReportPropertyChanged("HireDate");
                 OnHireDateChanged();
             }
@@ -2169,7 +2165,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPositionChanging(value);
                 ReportPropertyChanging("Position");
-                _Position = StructuralObject.SetValidValue(value, true);
+                _Position = StructuralObject.SetValidValue(value, true, "Position");
                 ReportPropertyChanged("Position");
                 OnPositionChanged();
             }
@@ -2180,7 +2176,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -2276,7 +2271,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -2295,7 +2290,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -2320,7 +2315,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPredecessorIDChanging(value);
                 ReportPropertyChanging("PredecessorID");
-                _PredecessorID = StructuralObject.SetValidValue(value);
+                _PredecessorID = StructuralObject.SetValidValue(value, "PredecessorID");
                 ReportPropertyChanged("PredecessorID");
                 OnPredecessorIDChanged();
             }
@@ -2344,7 +2339,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnSuccessorIDChanging(value);
                 ReportPropertyChanging("SuccessorID");
-                _SuccessorID = StructuralObject.SetValidValue(value);
+                _SuccessorID = StructuralObject.SetValidValue(value, "SuccessorID");
                 ReportPropertyChanged("SuccessorID");
                 OnSuccessorIDChanged();
             }
@@ -2368,7 +2363,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnTypeChanging(value);
                 ReportPropertyChanging("Type");
-                _Type = StructuralObject.SetValidValue(value);
+                _Type = StructuralObject.SetValidValue(value, "Type");
                 ReportPropertyChanged("Type");
                 OnTypeChanged();
             }
@@ -2379,7 +2374,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -2407,7 +2401,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -2426,7 +2420,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -2451,7 +2445,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnNameChanging(value);
                 ReportPropertyChanging("Name");
-                _Name = StructuralObject.SetValidValue(value, false);
+                _Name = StructuralObject.SetValidValue(value, false, "Name");
                 ReportPropertyChanged("Name");
                 OnNameChanged();
             }
@@ -2475,7 +2469,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnColorChanging(value);
                 ReportPropertyChanging("Color");
-                _Color = StructuralObject.SetValidValue(value, true);
+                _Color = StructuralObject.SetValidValue(value, true, "Color");
                 ReportPropertyChanged("Color");
                 OnColorChanged();
             }
@@ -2486,7 +2480,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -2518,7 +2511,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -2537,7 +2530,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -2562,7 +2555,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnTaskIDChanging(value);
                 ReportPropertyChanging("TaskID");
-                _TaskID = StructuralObject.SetValidValue(value);
+                _TaskID = StructuralObject.SetValidValue(value, "TaskID");
                 ReportPropertyChanged("TaskID");
                 OnTaskIDChanged();
             }
@@ -2586,7 +2579,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnResourceIDChanging(value);
                 ReportPropertyChanging("ResourceID");
-                _ResourceID = StructuralObject.SetValidValue(value);
+                _ResourceID = StructuralObject.SetValidValue(value, "ResourceID");
                 ReportPropertyChanged("ResourceID");
                 OnResourceIDChanged();
             }
@@ -2610,7 +2603,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnUnitsChanging(value);
                 ReportPropertyChanging("Units");
-                _Units = StructuralObject.SetValidValue(value);
+                _Units = StructuralObject.SetValidValue(value, "Units");
                 ReportPropertyChanged("Units");
                 OnUnitsChanged();
             }
@@ -2621,7 +2614,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -2661,7 +2653,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -2680,7 +2672,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -2705,7 +2697,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnParentIDChanging(value);
                 ReportPropertyChanging("ParentID");
-                _ParentID = StructuralObject.SetValidValue(value);
+                _ParentID = StructuralObject.SetValidValue(value, "ParentID");
                 ReportPropertyChanged("ParentID");
                 OnParentIDChanged();
             }
@@ -2729,7 +2721,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnOrderIDChanging(value);
                 ReportPropertyChanging("OrderID");
-                _OrderID = StructuralObject.SetValidValue(value);
+                _OrderID = StructuralObject.SetValidValue(value, "OrderID");
                 ReportPropertyChanged("OrderID");
                 OnOrderIDChanged();
             }
@@ -2753,7 +2745,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnTitleChanging(value);
                 ReportPropertyChanging("Title");
-                _Title = StructuralObject.SetValidValue(value, false);
+                _Title = StructuralObject.SetValidValue(value, false, "Title");
                 ReportPropertyChanged("Title");
                 OnTitleChanged();
             }
@@ -2777,7 +2769,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnStartChanging(value);
                 ReportPropertyChanging("Start");
-                _Start = StructuralObject.SetValidValue(value);
+                _Start = StructuralObject.SetValidValue(value, "Start");
                 ReportPropertyChanged("Start");
                 OnStartChanged();
             }
@@ -2801,7 +2793,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnEndChanging(value);
                 ReportPropertyChanging("End");
-                _End = StructuralObject.SetValidValue(value);
+                _End = StructuralObject.SetValidValue(value, "End");
                 ReportPropertyChanged("End");
                 OnEndChanged();
             }
@@ -2825,7 +2817,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPercentCompleteChanging(value);
                 ReportPropertyChanging("PercentComplete");
-                _PercentComplete = StructuralObject.SetValidValue(value);
+                _PercentComplete = StructuralObject.SetValidValue(value, "PercentComplete");
                 ReportPropertyChanged("PercentComplete");
                 OnPercentCompleteChanged();
             }
@@ -2849,7 +2841,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnExpandedChanging(value);
                 ReportPropertyChanging("Expanded");
-                _Expanded = StructuralObject.SetValidValue(value);
+                _Expanded = StructuralObject.SetValidValue(value, "Expanded");
                 ReportPropertyChanged("Expanded");
                 OnExpandedChanged();
             }
@@ -2873,7 +2865,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnSummaryChanging(value);
                 ReportPropertyChanging("Summary");
-                _Summary = StructuralObject.SetValidValue(value);
+                _Summary = StructuralObject.SetValidValue(value, "Summary");
                 ReportPropertyChanged("Summary");
                 OnSummaryChanged();
             }
@@ -2884,7 +2876,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -2988,7 +2979,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -3007,7 +2998,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -3032,7 +3023,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnSymbolChanging(value);
                 ReportPropertyChanging("Symbol");
-                _Symbol = StructuralObject.SetValidValue(value, false);
+                _Symbol = StructuralObject.SetValidValue(value, false, "Symbol");
                 ReportPropertyChanged("Symbol");
                 OnSymbolChanged();
             }
@@ -3056,7 +3047,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnDateChanging(value);
                 ReportPropertyChanging("Date");
-                _Date = StructuralObject.SetValidValue(value);
+                _Date = StructuralObject.SetValidValue(value, "Date");
                 ReportPropertyChanged("Date");
                 OnDateChanged();
             }
@@ -3080,7 +3071,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnOpenChanging(value);
                 ReportPropertyChanging("Open");
-                _Open = StructuralObject.SetValidValue(value);
+                _Open = StructuralObject.SetValidValue(value, "Open");
                 ReportPropertyChanged("Open");
                 OnOpenChanged();
             }
@@ -3104,7 +3095,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnHighChanging(value);
                 ReportPropertyChanging("High");
-                _High = StructuralObject.SetValidValue(value);
+                _High = StructuralObject.SetValidValue(value, "High");
                 ReportPropertyChanged("High");
                 OnHighChanged();
             }
@@ -3128,7 +3119,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnLowChanging(value);
                 ReportPropertyChanging("Low");
-                _Low = StructuralObject.SetValidValue(value);
+                _Low = StructuralObject.SetValidValue(value, "Low");
                 ReportPropertyChanged("Low");
                 OnLowChanged();
             }
@@ -3152,7 +3143,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCloseChanging(value);
                 ReportPropertyChanging("Close");
-                _Close = StructuralObject.SetValidValue(value);
+                _Close = StructuralObject.SetValidValue(value, "Close");
                 ReportPropertyChanged("Close");
                 OnCloseChanged();
             }
@@ -3176,7 +3167,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnVolumeChanging(value);
                 ReportPropertyChanging("Volume");
-                _Volume = StructuralObject.SetValidValue(value);
+                _Volume = StructuralObject.SetValidValue(value, "Volume");
                 ReportPropertyChanged("Volume");
                 OnVolumeChanged();
             }
@@ -3187,7 +3178,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -3223,7 +3213,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -3242,7 +3232,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnMeetingIDChanging(value);
                     ReportPropertyChanging("MeetingID");
-                    _MeetingID = StructuralObject.SetValidValue(value);
+                    _MeetingID = StructuralObject.SetValidValue(value, "MeetingID");
                     ReportPropertyChanged("MeetingID");
                     OnMeetingIDChanged();
                 }
@@ -3267,7 +3257,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnStartChanging(value);
                 ReportPropertyChanging("Start");
-                _Start = StructuralObject.SetValidValue(value);
+                _Start = StructuralObject.SetValidValue(value, "Start");
                 ReportPropertyChanged("Start");
                 OnStartChanged();
             }
@@ -3291,7 +3281,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnEndChanging(value);
                 ReportPropertyChanging("End");
-                _End = StructuralObject.SetValidValue(value);
+                _End = StructuralObject.SetValidValue(value, "End");
                 ReportPropertyChanged("End");
                 OnEndChanged();
             }
@@ -3315,7 +3305,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnTitleChanging(value);
                 ReportPropertyChanging("Title");
-                _Title = StructuralObject.SetValidValue(value, false);
+                _Title = StructuralObject.SetValidValue(value, false, "Title");
                 ReportPropertyChanged("Title");
                 OnTitleChanged();
             }
@@ -3339,7 +3329,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnDescriptionChanging(value);
                 ReportPropertyChanging("Description");
-                _Description = StructuralObject.SetValidValue(value, false);
+                _Description = StructuralObject.SetValidValue(value, false, "Description");
                 ReportPropertyChanged("Description");
                 OnDescriptionChanged();
             }
@@ -3363,7 +3353,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRoomIDChanging(value);
                 ReportPropertyChanging("RoomID");
-                _RoomID = StructuralObject.SetValidValue(value);
+                _RoomID = StructuralObject.SetValidValue(value, "RoomID");
                 ReportPropertyChanged("RoomID");
                 OnRoomIDChanged();
             }
@@ -3387,7 +3377,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnIsAllDayChanging(value);
                 ReportPropertyChanging("IsAllDay");
-                _IsAllDay = StructuralObject.SetValidValue(value);
+                _IsAllDay = StructuralObject.SetValidValue(value, "IsAllDay");
                 ReportPropertyChanged("IsAllDay");
                 OnIsAllDayChanged();
             }
@@ -3411,7 +3401,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRecurrenceRuleChanging(value);
                 ReportPropertyChanging("RecurrenceRule");
-                _RecurrenceRule = StructuralObject.SetValidValue(value, true);
+                _RecurrenceRule = StructuralObject.SetValidValue(value, true, "RecurrenceRule");
                 ReportPropertyChanged("RecurrenceRule");
                 OnRecurrenceRuleChanged();
             }
@@ -3435,7 +3425,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRecurrenceIDChanging(value);
                 ReportPropertyChanging("RecurrenceID");
-                _RecurrenceID = StructuralObject.SetValidValue(value);
+                _RecurrenceID = StructuralObject.SetValidValue(value, "RecurrenceID");
                 ReportPropertyChanged("RecurrenceID");
                 OnRecurrenceIDChanged();
             }
@@ -3459,7 +3449,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRecurrenceExceptionChanging(value);
                 ReportPropertyChanging("RecurrenceException");
-                _RecurrenceException = StructuralObject.SetValidValue(value, true);
+                _RecurrenceException = StructuralObject.SetValidValue(value, true, "RecurrenceException");
                 ReportPropertyChanged("RecurrenceException");
                 OnRecurrenceExceptionChanged();
             }
@@ -3483,7 +3473,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnStartTimezoneChanging(value);
                 ReportPropertyChanging("StartTimezone");
-                _StartTimezone = StructuralObject.SetValidValue(value, true);
+                _StartTimezone = StructuralObject.SetValidValue(value, true, "StartTimezone");
                 ReportPropertyChanged("StartTimezone");
                 OnStartTimezoneChanged();
             }
@@ -3507,7 +3497,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnEndTimezoneChanging(value);
                 ReportPropertyChanging("EndTimezone");
-                _EndTimezone = StructuralObject.SetValidValue(value, true);
+                _EndTimezone = StructuralObject.SetValidValue(value, true, "EndTimezone");
                 ReportPropertyChanged("EndTimezone");
                 OnEndTimezoneChanged();
             }
@@ -3518,7 +3508,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -3632,7 +3621,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -3651,7 +3640,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnMeetingIDChanging(value);
                     ReportPropertyChanging("MeetingID");
-                    _MeetingID = StructuralObject.SetValidValue(value);
+                    _MeetingID = StructuralObject.SetValidValue(value, "MeetingID");
                     ReportPropertyChanged("MeetingID");
                     OnMeetingIDChanged();
                 }
@@ -3678,7 +3667,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnAttendeeIDChanging(value);
                     ReportPropertyChanging("AttendeeID");
-                    _AttendeeID = StructuralObject.SetValidValue(value);
+                    _AttendeeID = StructuralObject.SetValidValue(value, "AttendeeID");
                     ReportPropertyChanged("AttendeeID");
                     OnAttendeeIDChanged();
                 }
@@ -3690,7 +3679,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -3758,7 +3746,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -3777,7 +3765,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnOrderIDChanging(value);
                     ReportPropertyChanging("OrderID");
-                    _OrderID = StructuralObject.SetValidValue(value);
+                    _OrderID = StructuralObject.SetValidValue(value, "OrderID");
                     ReportPropertyChanged("OrderID");
                     OnOrderIDChanged();
                 }
@@ -3802,7 +3790,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCustomerIDChanging(value);
                 ReportPropertyChanging("CustomerID");
-                _CustomerID = StructuralObject.SetValidValue(value, true);
+                _CustomerID = StructuralObject.SetValidValue(value, true, "CustomerID");
                 ReportPropertyChanged("CustomerID");
                 OnCustomerIDChanged();
             }
@@ -3826,7 +3814,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnEmployeeIDChanging(value);
                 ReportPropertyChanging("EmployeeID");
-                _EmployeeID = StructuralObject.SetValidValue(value);
+                _EmployeeID = StructuralObject.SetValidValue(value, "EmployeeID");
                 ReportPropertyChanged("EmployeeID");
                 OnEmployeeIDChanged();
             }
@@ -3850,7 +3838,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnOrderDateChanging(value);
                 ReportPropertyChanging("OrderDate");
-                _OrderDate = StructuralObject.SetValidValue(value);
+                _OrderDate = StructuralObject.SetValidValue(value, "OrderDate");
                 ReportPropertyChanged("OrderDate");
                 OnOrderDateChanged();
             }
@@ -3874,7 +3862,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRequiredDateChanging(value);
                 ReportPropertyChanging("RequiredDate");
-                _RequiredDate = StructuralObject.SetValidValue(value);
+                _RequiredDate = StructuralObject.SetValidValue(value, "RequiredDate");
                 ReportPropertyChanged("RequiredDate");
                 OnRequiredDateChanged();
             }
@@ -3898,7 +3886,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnShippedDateChanging(value);
                 ReportPropertyChanging("ShippedDate");
-                _ShippedDate = StructuralObject.SetValidValue(value);
+                _ShippedDate = StructuralObject.SetValidValue(value, "ShippedDate");
                 ReportPropertyChanged("ShippedDate");
                 OnShippedDateChanged();
             }
@@ -3922,7 +3910,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnShipViaChanging(value);
                 ReportPropertyChanging("ShipVia");
-                _ShipVia = StructuralObject.SetValidValue(value);
+                _ShipVia = StructuralObject.SetValidValue(value, "ShipVia");
                 ReportPropertyChanged("ShipVia");
                 OnShipViaChanged();
             }
@@ -3946,7 +3934,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnFreightChanging(value);
                 ReportPropertyChanging("Freight");
-                _Freight = StructuralObject.SetValidValue(value);
+                _Freight = StructuralObject.SetValidValue(value, "Freight");
                 ReportPropertyChanged("Freight");
                 OnFreightChanged();
             }
@@ -3970,7 +3958,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnShipNameChanging(value);
                 ReportPropertyChanging("ShipName");
-                _ShipName = StructuralObject.SetValidValue(value, true);
+                _ShipName = StructuralObject.SetValidValue(value, true, "ShipName");
                 ReportPropertyChanged("ShipName");
                 OnShipNameChanged();
             }
@@ -3994,7 +3982,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnShipAddressChanging(value);
                 ReportPropertyChanging("ShipAddress");
-                _ShipAddress = StructuralObject.SetValidValue(value, true);
+                _ShipAddress = StructuralObject.SetValidValue(value, true, "ShipAddress");
                 ReportPropertyChanged("ShipAddress");
                 OnShipAddressChanged();
             }
@@ -4018,7 +4006,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnShipCityChanging(value);
                 ReportPropertyChanging("ShipCity");
-                _ShipCity = StructuralObject.SetValidValue(value, true);
+                _ShipCity = StructuralObject.SetValidValue(value, true, "ShipCity");
                 ReportPropertyChanged("ShipCity");
                 OnShipCityChanged();
             }
@@ -4042,7 +4030,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnShipRegionChanging(value);
                 ReportPropertyChanging("ShipRegion");
-                _ShipRegion = StructuralObject.SetValidValue(value, true);
+                _ShipRegion = StructuralObject.SetValidValue(value, true, "ShipRegion");
                 ReportPropertyChanged("ShipRegion");
                 OnShipRegionChanged();
             }
@@ -4066,7 +4054,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnShipPostalCodeChanging(value);
                 ReportPropertyChanging("ShipPostalCode");
-                _ShipPostalCode = StructuralObject.SetValidValue(value, true);
+                _ShipPostalCode = StructuralObject.SetValidValue(value, true, "ShipPostalCode");
                 ReportPropertyChanged("ShipPostalCode");
                 OnShipPostalCodeChanged();
             }
@@ -4090,7 +4078,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnShipCountryChanging(value);
                 ReportPropertyChanging("ShipCountry");
-                _ShipCountry = StructuralObject.SetValidValue(value, true);
+                _ShipCountry = StructuralObject.SetValidValue(value, true, "ShipCountry");
                 ReportPropertyChanged("ShipCountry");
                 OnShipCountryChanged();
             }
@@ -4101,7 +4089,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -4275,7 +4262,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -4294,7 +4281,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnOrderIDChanging(value);
                     ReportPropertyChanging("OrderID");
-                    _OrderID = StructuralObject.SetValidValue(value);
+                    _OrderID = StructuralObject.SetValidValue(value, "OrderID");
                     ReportPropertyChanged("OrderID");
                     OnOrderIDChanged();
                 }
@@ -4321,7 +4308,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnProductIDChanging(value);
                     ReportPropertyChanging("ProductID");
-                    _ProductID = StructuralObject.SetValidValue(value);
+                    _ProductID = StructuralObject.SetValidValue(value, "ProductID");
                     ReportPropertyChanged("ProductID");
                     OnProductIDChanged();
                 }
@@ -4346,7 +4333,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnUnitPriceChanging(value);
                 ReportPropertyChanging("UnitPrice");
-                _UnitPrice = StructuralObject.SetValidValue(value);
+                _UnitPrice = StructuralObject.SetValidValue(value, "UnitPrice");
                 ReportPropertyChanged("UnitPrice");
                 OnUnitPriceChanged();
             }
@@ -4370,7 +4357,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnQuantityChanging(value);
                 ReportPropertyChanging("Quantity");
-                _Quantity = StructuralObject.SetValidValue(value);
+                _Quantity = StructuralObject.SetValidValue(value, "Quantity");
                 ReportPropertyChanged("Quantity");
                 OnQuantityChanged();
             }
@@ -4394,7 +4381,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnDiscountChanging(value);
                 ReportPropertyChanging("Discount");
-                _Discount = StructuralObject.SetValidValue(value);
+                _Discount = StructuralObject.SetValidValue(value, "Discount");
                 ReportPropertyChanged("Discount");
                 OnDiscountChanged();
             }
@@ -4405,7 +4392,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -4511,7 +4497,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -4530,7 +4516,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnIdChanging(value);
                     ReportPropertyChanging("Id");
-                    _Id = StructuralObject.SetValidValue(value);
+                    _Id = StructuralObject.SetValidValue(value, "Id");
                     ReportPropertyChanged("Id");
                     OnIdChanged();
                 }
@@ -4555,7 +4541,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnFromShapeIdChanging(value);
                 ReportPropertyChanging("FromShapeId");
-                _FromShapeId = StructuralObject.SetValidValue(value);
+                _FromShapeId = StructuralObject.SetValidValue(value, "FromShapeId");
                 ReportPropertyChanged("FromShapeId");
                 OnFromShapeIdChanged();
             }
@@ -4579,7 +4565,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnToShapeIdChanging(value);
                 ReportPropertyChanging("ToShapeId");
-                _ToShapeId = StructuralObject.SetValidValue(value);
+                _ToShapeId = StructuralObject.SetValidValue(value, "ToShapeId");
                 ReportPropertyChanged("ToShapeId");
                 OnToShapeIdChanged();
             }
@@ -4603,7 +4589,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnTextChanging(value);
                 ReportPropertyChanging("Text");
-                _Text = StructuralObject.SetValidValue(value, true);
+                _Text = StructuralObject.SetValidValue(value, true, "Text");
                 ReportPropertyChanged("Text");
                 OnTextChanged();
             }
@@ -4627,7 +4613,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnFromPointXChanging(value);
                 ReportPropertyChanging("FromPointX");
-                _FromPointX = StructuralObject.SetValidValue(value);
+                _FromPointX = StructuralObject.SetValidValue(value, "FromPointX");
                 ReportPropertyChanged("FromPointX");
                 OnFromPointXChanged();
             }
@@ -4651,7 +4637,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnFromPointYChanging(value);
                 ReportPropertyChanging("FromPointY");
-                _FromPointY = StructuralObject.SetValidValue(value);
+                _FromPointY = StructuralObject.SetValidValue(value, "FromPointY");
                 ReportPropertyChanged("FromPointY");
                 OnFromPointYChanged();
             }
@@ -4675,7 +4661,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnToPointXChanging(value);
                 ReportPropertyChanging("ToPointX");
-                _ToPointX = StructuralObject.SetValidValue(value);
+                _ToPointX = StructuralObject.SetValidValue(value, "ToPointX");
                 ReportPropertyChanged("ToPointX");
                 OnToPointXChanged();
             }
@@ -4699,7 +4685,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnToPointYChanging(value);
                 ReportPropertyChanging("ToPointY");
-                _ToPointY = StructuralObject.SetValidValue(value);
+                _ToPointY = StructuralObject.SetValidValue(value, "ToPointY");
                 ReportPropertyChanged("ToPointY");
                 OnToPointYChanged();
             }
@@ -4710,7 +4696,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -4736,7 +4721,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -4755,7 +4740,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnIdChanging(value);
                     ReportPropertyChanging("Id");
-                    _Id = StructuralObject.SetValidValue(value);
+                    _Id = StructuralObject.SetValidValue(value, "Id");
                     ReportPropertyChanged("Id");
                     OnIdChanged();
                 }
@@ -4780,7 +4765,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnJobTitleChanging(value);
                 ReportPropertyChanging("JobTitle");
-                _JobTitle = StructuralObject.SetValidValue(value, true);
+                _JobTitle = StructuralObject.SetValidValue(value, true, "JobTitle");
                 ReportPropertyChanged("JobTitle");
                 OnJobTitleChanged();
             }
@@ -4804,7 +4789,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnColorChanging(value);
                 ReportPropertyChanging("Color");
-                _Color = StructuralObject.SetValidValue(value, true);
+                _Color = StructuralObject.SetValidValue(value, true, "Color");
                 ReportPropertyChanged("Color");
                 OnColorChanged();
             }
@@ -4815,7 +4800,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -4845,7 +4829,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -4864,7 +4848,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnProductIDChanging(value);
                     ReportPropertyChanging("ProductID");
-                    _ProductID = StructuralObject.SetValidValue(value);
+                    _ProductID = StructuralObject.SetValidValue(value, "ProductID");
                     ReportPropertyChanged("ProductID");
                     OnProductIDChanged();
                 }
@@ -4889,7 +4873,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnProductNameChanging(value);
                 ReportPropertyChanging("ProductName");
-                _ProductName = StructuralObject.SetValidValue(value, false);
+                _ProductName = StructuralObject.SetValidValue(value, false, "ProductName");
                 ReportPropertyChanged("ProductName");
                 OnProductNameChanged();
             }
@@ -4913,7 +4897,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnSupplierIDChanging(value);
                 ReportPropertyChanging("SupplierID");
-                _SupplierID = StructuralObject.SetValidValue(value);
+                _SupplierID = StructuralObject.SetValidValue(value, "SupplierID");
                 ReportPropertyChanged("SupplierID");
                 OnSupplierIDChanged();
             }
@@ -4937,7 +4921,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCategoryIDChanging(value);
                 ReportPropertyChanging("CategoryID");
-                _CategoryID = StructuralObject.SetValidValue(value);
+                _CategoryID = StructuralObject.SetValidValue(value, "CategoryID");
                 ReportPropertyChanged("CategoryID");
                 OnCategoryIDChanged();
             }
@@ -4961,7 +4945,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnQuantityPerUnitChanging(value);
                 ReportPropertyChanging("QuantityPerUnit");
-                _QuantityPerUnit = StructuralObject.SetValidValue(value, true);
+                _QuantityPerUnit = StructuralObject.SetValidValue(value, true, "QuantityPerUnit");
                 ReportPropertyChanged("QuantityPerUnit");
                 OnQuantityPerUnitChanged();
             }
@@ -4985,7 +4969,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnUnitPriceChanging(value);
                 ReportPropertyChanging("UnitPrice");
-                _UnitPrice = StructuralObject.SetValidValue(value);
+                _UnitPrice = StructuralObject.SetValidValue(value, "UnitPrice");
                 ReportPropertyChanged("UnitPrice");
                 OnUnitPriceChanged();
             }
@@ -5009,7 +4993,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnUnitsInStockChanging(value);
                 ReportPropertyChanging("UnitsInStock");
-                _UnitsInStock = StructuralObject.SetValidValue(value);
+                _UnitsInStock = StructuralObject.SetValidValue(value, "UnitsInStock");
                 ReportPropertyChanged("UnitsInStock");
                 OnUnitsInStockChanged();
             }
@@ -5033,7 +5017,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnUnitsOnOrderChanging(value);
                 ReportPropertyChanging("UnitsOnOrder");
-                _UnitsOnOrder = StructuralObject.SetValidValue(value);
+                _UnitsOnOrder = StructuralObject.SetValidValue(value, "UnitsOnOrder");
                 ReportPropertyChanged("UnitsOnOrder");
                 OnUnitsOnOrderChanged();
             }
@@ -5057,7 +5041,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnReorderLevelChanging(value);
                 ReportPropertyChanging("ReorderLevel");
-                _ReorderLevel = StructuralObject.SetValidValue(value);
+                _ReorderLevel = StructuralObject.SetValidValue(value, "ReorderLevel");
                 ReportPropertyChanged("ReorderLevel");
                 OnReorderLevelChanged();
             }
@@ -5081,7 +5065,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnDiscontinuedChanging(value);
                 ReportPropertyChanging("Discontinued");
-                _Discontinued = StructuralObject.SetValidValue(value);
+                _Discontinued = StructuralObject.SetValidValue(value, "Discontinued");
                 ReportPropertyChanged("Discontinued");
                 OnDiscontinuedChanged();
             }
@@ -5092,7 +5076,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -5222,7 +5205,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -5241,7 +5224,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnRegionIDChanging(value);
                     ReportPropertyChanging("RegionID");
-                    _RegionID = StructuralObject.SetValidValue(value);
+                    _RegionID = StructuralObject.SetValidValue(value, "RegionID");
                     ReportPropertyChanged("RegionID");
                     OnRegionIDChanged();
                 }
@@ -5266,7 +5249,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRegionDescriptionChanging(value);
                 ReportPropertyChanging("RegionDescription");
-                _RegionDescription = StructuralObject.SetValidValue(value, false);
+                _RegionDescription = StructuralObject.SetValidValue(value, false, "RegionDescription");
                 ReportPropertyChanged("RegionDescription");
                 OnRegionDescriptionChanged();
             }
@@ -5277,7 +5260,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -5331,7 +5313,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -5350,7 +5332,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnShipperIDChanging(value);
                     ReportPropertyChanging("ShipperID");
-                    _ShipperID = StructuralObject.SetValidValue(value);
+                    _ShipperID = StructuralObject.SetValidValue(value, "ShipperID");
                     ReportPropertyChanged("ShipperID");
                     OnShipperIDChanged();
                 }
@@ -5375,7 +5357,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCompanyNameChanging(value);
                 ReportPropertyChanging("CompanyName");
-                _CompanyName = StructuralObject.SetValidValue(value, false);
+                _CompanyName = StructuralObject.SetValidValue(value, false, "CompanyName");
                 ReportPropertyChanged("CompanyName");
                 OnCompanyNameChanged();
             }
@@ -5399,7 +5381,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPhoneChanging(value);
                 ReportPropertyChanging("Phone");
-                _Phone = StructuralObject.SetValidValue(value, true);
+                _Phone = StructuralObject.SetValidValue(value, true, "Phone");
                 ReportPropertyChanged("Phone");
                 OnPhoneChanged();
             }
@@ -5410,7 +5392,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -5464,7 +5445,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -5483,7 +5464,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnSupplierIDChanging(value);
                     ReportPropertyChanging("SupplierID");
-                    _SupplierID = StructuralObject.SetValidValue(value);
+                    _SupplierID = StructuralObject.SetValidValue(value, "SupplierID");
                     ReportPropertyChanged("SupplierID");
                     OnSupplierIDChanged();
                 }
@@ -5508,7 +5489,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCompanyNameChanging(value);
                 ReportPropertyChanging("CompanyName");
-                _CompanyName = StructuralObject.SetValidValue(value, false);
+                _CompanyName = StructuralObject.SetValidValue(value, false, "CompanyName");
                 ReportPropertyChanged("CompanyName");
                 OnCompanyNameChanged();
             }
@@ -5532,7 +5513,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnContactNameChanging(value);
                 ReportPropertyChanging("ContactName");
-                _ContactName = StructuralObject.SetValidValue(value, true);
+                _ContactName = StructuralObject.SetValidValue(value, true, "ContactName");
                 ReportPropertyChanged("ContactName");
                 OnContactNameChanged();
             }
@@ -5556,7 +5537,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnContactTitleChanging(value);
                 ReportPropertyChanging("ContactTitle");
-                _ContactTitle = StructuralObject.SetValidValue(value, true);
+                _ContactTitle = StructuralObject.SetValidValue(value, true, "ContactTitle");
                 ReportPropertyChanged("ContactTitle");
                 OnContactTitleChanged();
             }
@@ -5580,7 +5561,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnAddressChanging(value);
                 ReportPropertyChanging("Address");
-                _Address = StructuralObject.SetValidValue(value, true);
+                _Address = StructuralObject.SetValidValue(value, true, "Address");
                 ReportPropertyChanged("Address");
                 OnAddressChanged();
             }
@@ -5604,7 +5585,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCityChanging(value);
                 ReportPropertyChanging("City");
-                _City = StructuralObject.SetValidValue(value, true);
+                _City = StructuralObject.SetValidValue(value, true, "City");
                 ReportPropertyChanged("City");
                 OnCityChanged();
             }
@@ -5628,7 +5609,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRegionChanging(value);
                 ReportPropertyChanging("Region");
-                _Region = StructuralObject.SetValidValue(value, true);
+                _Region = StructuralObject.SetValidValue(value, true, "Region");
                 ReportPropertyChanged("Region");
                 OnRegionChanged();
             }
@@ -5652,7 +5633,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPostalCodeChanging(value);
                 ReportPropertyChanging("PostalCode");
-                _PostalCode = StructuralObject.SetValidValue(value, true);
+                _PostalCode = StructuralObject.SetValidValue(value, true, "PostalCode");
                 ReportPropertyChanged("PostalCode");
                 OnPostalCodeChanged();
             }
@@ -5676,7 +5657,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnCountryChanging(value);
                 ReportPropertyChanging("Country");
-                _Country = StructuralObject.SetValidValue(value, true);
+                _Country = StructuralObject.SetValidValue(value, true, "Country");
                 ReportPropertyChanged("Country");
                 OnCountryChanged();
             }
@@ -5700,7 +5681,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnPhoneChanging(value);
                 ReportPropertyChanging("Phone");
-                _Phone = StructuralObject.SetValidValue(value, true);
+                _Phone = StructuralObject.SetValidValue(value, true, "Phone");
                 ReportPropertyChanged("Phone");
                 OnPhoneChanged();
             }
@@ -5724,7 +5705,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnFaxChanging(value);
                 ReportPropertyChanging("Fax");
-                _Fax = StructuralObject.SetValidValue(value, true);
+                _Fax = StructuralObject.SetValidValue(value, true, "Fax");
                 ReportPropertyChanged("Fax");
                 OnFaxChanged();
             }
@@ -5748,7 +5729,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnHomePageChanging(value);
                 ReportPropertyChanging("HomePage");
-                _HomePage = StructuralObject.SetValidValue(value, true);
+                _HomePage = StructuralObject.SetValidValue(value, true, "HomePage");
                 ReportPropertyChanged("HomePage");
                 OnHomePageChanged();
             }
@@ -5759,7 +5740,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -5819,7 +5799,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -5838,7 +5818,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnTaskIDChanging(value);
                     ReportPropertyChanging("TaskID");
-                    _TaskID = StructuralObject.SetValidValue(value);
+                    _TaskID = StructuralObject.SetValidValue(value, "TaskID");
                     ReportPropertyChanged("TaskID");
                     OnTaskIDChanged();
                 }
@@ -5863,7 +5843,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnStartChanging(value);
                 ReportPropertyChanging("Start");
-                _Start = StructuralObject.SetValidValue(value);
+                _Start = StructuralObject.SetValidValue(value, "Start");
                 ReportPropertyChanged("Start");
                 OnStartChanged();
             }
@@ -5887,7 +5867,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnEndChanging(value);
                 ReportPropertyChanging("End");
-                _End = StructuralObject.SetValidValue(value);
+                _End = StructuralObject.SetValidValue(value, "End");
                 ReportPropertyChanged("End");
                 OnEndChanged();
             }
@@ -5911,7 +5891,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnTitleChanging(value);
                 ReportPropertyChanging("Title");
-                _Title = StructuralObject.SetValidValue(value, false);
+                _Title = StructuralObject.SetValidValue(value, false, "Title");
                 ReportPropertyChanged("Title");
                 OnTitleChanged();
             }
@@ -5935,7 +5915,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnDescriptionChanging(value);
                 ReportPropertyChanging("Description");
-                _Description = StructuralObject.SetValidValue(value, true);
+                _Description = StructuralObject.SetValidValue(value, true, "Description");
                 ReportPropertyChanged("Description");
                 OnDescriptionChanged();
             }
@@ -5959,7 +5939,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnOwnerIDChanging(value);
                 ReportPropertyChanging("OwnerID");
-                _OwnerID = StructuralObject.SetValidValue(value);
+                _OwnerID = StructuralObject.SetValidValue(value, "OwnerID");
                 ReportPropertyChanged("OwnerID");
                 OnOwnerIDChanged();
             }
@@ -5983,7 +5963,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnIsAllDayChanging(value);
                 ReportPropertyChanging("IsAllDay");
-                _IsAllDay = StructuralObject.SetValidValue(value);
+                _IsAllDay = StructuralObject.SetValidValue(value, "IsAllDay");
                 ReportPropertyChanged("IsAllDay");
                 OnIsAllDayChanged();
             }
@@ -6007,7 +5987,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRecurrenceRuleChanging(value);
                 ReportPropertyChanging("RecurrenceRule");
-                _RecurrenceRule = StructuralObject.SetValidValue(value, true);
+                _RecurrenceRule = StructuralObject.SetValidValue(value, true, "RecurrenceRule");
                 ReportPropertyChanged("RecurrenceRule");
                 OnRecurrenceRuleChanged();
             }
@@ -6031,7 +6011,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRecurrenceIDChanging(value);
                 ReportPropertyChanging("RecurrenceID");
-                _RecurrenceID = StructuralObject.SetValidValue(value);
+                _RecurrenceID = StructuralObject.SetValidValue(value, "RecurrenceID");
                 ReportPropertyChanged("RecurrenceID");
                 OnRecurrenceIDChanged();
             }
@@ -6055,7 +6035,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRecurrenceExceptionChanging(value);
                 ReportPropertyChanging("RecurrenceException");
-                _RecurrenceException = StructuralObject.SetValidValue(value, true);
+                _RecurrenceException = StructuralObject.SetValidValue(value, true, "RecurrenceException");
                 ReportPropertyChanged("RecurrenceException");
                 OnRecurrenceExceptionChanged();
             }
@@ -6079,7 +6059,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnStartTimezoneChanging(value);
                 ReportPropertyChanging("StartTimezone");
-                _StartTimezone = StructuralObject.SetValidValue(value, true);
+                _StartTimezone = StructuralObject.SetValidValue(value, true, "StartTimezone");
                 ReportPropertyChanged("StartTimezone");
                 OnStartTimezoneChanged();
             }
@@ -6103,7 +6083,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnEndTimezoneChanging(value);
                 ReportPropertyChanging("EndTimezone");
-                _EndTimezone = StructuralObject.SetValidValue(value, true);
+                _EndTimezone = StructuralObject.SetValidValue(value, true, "EndTimezone");
                 ReportPropertyChanged("EndTimezone");
                 OnEndTimezoneChanged();
             }
@@ -6114,7 +6094,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -6208,7 +6187,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -6227,7 +6206,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnTerritoryIDChanging(value);
                     ReportPropertyChanging("TerritoryID");
-                    _TerritoryID = StructuralObject.SetValidValue(value, false);
+                    _TerritoryID = StructuralObject.SetValidValue(value, false, "TerritoryID");
                     ReportPropertyChanged("TerritoryID");
                     OnTerritoryIDChanged();
                 }
@@ -6252,7 +6231,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnTerritoryDescriptionChanging(value);
                 ReportPropertyChanging("TerritoryDescription");
-                _TerritoryDescription = StructuralObject.SetValidValue(value, false);
+                _TerritoryDescription = StructuralObject.SetValidValue(value, false, "TerritoryDescription");
                 ReportPropertyChanged("TerritoryDescription");
                 OnTerritoryDescriptionChanged();
             }
@@ -6276,7 +6255,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnRegionIDChanging(value);
                 ReportPropertyChanging("RegionID");
-                _RegionID = StructuralObject.SetValidValue(value);
+                _RegionID = StructuralObject.SetValidValue(value, "RegionID");
                 ReportPropertyChanged("RegionID");
                 OnRegionIDChanged();
             }
@@ -6287,7 +6266,6 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -6389,7 +6367,7 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -6408,7 +6386,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -6435,7 +6413,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnStationChanging(value);
                     ReportPropertyChanging("Station");
-                    _Station = StructuralObject.SetValidValue(value, false);
+                    _Station = StructuralObject.SetValidValue(value, false, "Station");
                     ReportPropertyChanged("Station");
                     OnStationChanged();
                 }
@@ -6462,7 +6440,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnDateChanging(value);
                     ReportPropertyChanging("Date");
-                    _Date = StructuralObject.SetValidValue(value);
+                    _Date = StructuralObject.SetValidValue(value, "Date");
                     ReportPropertyChanged("Date");
                     OnDateChanged();
                 }
@@ -6489,7 +6467,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnTMaxChanging(value);
                     ReportPropertyChanging("TMax");
-                    _TMax = StructuralObject.SetValidValue(value);
+                    _TMax = StructuralObject.SetValidValue(value, "TMax");
                     ReportPropertyChanged("TMax");
                     OnTMaxChanged();
                 }
@@ -6516,7 +6494,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnTMinChanging(value);
                     ReportPropertyChanging("TMin");
-                    _TMin = StructuralObject.SetValidValue(value);
+                    _TMin = StructuralObject.SetValidValue(value, "TMin");
                     ReportPropertyChanged("TMin");
                     OnTMinChanged();
                 }
@@ -6543,7 +6521,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnWindChanging(value);
                     ReportPropertyChanging("Wind");
-                    _Wind = StructuralObject.SetValidValue(value);
+                    _Wind = StructuralObject.SetValidValue(value, "Wind");
                     ReportPropertyChanged("Wind");
                     OnWindChanged();
                 }
@@ -6568,7 +6546,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnGustChanging(value);
                 ReportPropertyChanging("Gust");
-                _Gust = StructuralObject.SetValidValue(value);
+                _Gust = StructuralObject.SetValidValue(value, "Gust");
                 ReportPropertyChanged("Gust");
                 OnGustChanged();
             }
@@ -6594,7 +6572,7 @@ namespace KendoCRUDService.Models.EF
                 {
                     OnRainChanging(value);
                     ReportPropertyChanging("Rain");
-                    _Rain = StructuralObject.SetValidValue(value);
+                    _Rain = StructuralObject.SetValidValue(value, "Rain");
                     ReportPropertyChanged("Rain");
                     OnRainChanged();
                 }
@@ -6619,7 +6597,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnSnowChanging(value);
                 ReportPropertyChanging("Snow");
-                _Snow = StructuralObject.SetValidValue(value);
+                _Snow = StructuralObject.SetValidValue(value, "Snow");
                 ReportPropertyChanged("Snow");
                 OnSnowChanged();
             }
@@ -6643,7 +6621,7 @@ namespace KendoCRUDService.Models.EF
             {
                 OnEventsChanging(value);
                 ReportPropertyChanging("Events");
-                _Events = StructuralObject.SetValidValue(value, true);
+                _Events = StructuralObject.SetValidValue(value, true, "Events");
                 ReportPropertyChanged("Events");
                 OnEventsChanged();
             }
@@ -6654,10 +6632,8 @@ namespace KendoCRUDService.Models.EF
 
         #endregion
 
-    
     }
 
     #endregion
 
-    
 }
